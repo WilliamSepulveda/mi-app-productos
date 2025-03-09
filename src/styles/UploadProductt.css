@@ -1,0 +1,78 @@
+/* Contenedor general centrado */
+.contenedor-form {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f0f4ff, #d4e1ff);
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Formulario */
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Inputs */
+  .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Botón */
+  .form-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mensaje de éxito/error */
+  .form-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Responsive pequeño */
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .form-title {
+      font-size: 1.25rem;
+    }
+  }
+  
