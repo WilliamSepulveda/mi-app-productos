@@ -1,78 +1,111 @@
-/* Contenedor general centrado */
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.freepik.com/free-photo/blue-model-career-kit-arrangement_23-2150083936.jpg?t=st=1741584301~exp=1741587901~hmac=426f1ede6714d2bb81c4be9ce23255ea4b431098a81e210a7860a4ff204979d9&w=1380');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor centrado */
 .contenedor-form {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(135deg, #f0f4ff, #d4e1ff);
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  
-  /* Formulario */
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Formulario estilo glass */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 192, 203, 0.3); /* tono rosado */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: -15vh;
+}
+
+/* Título */
+.form-title {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #d63384; /* rosado vibrante */
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e5a4c0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black !important;
+}
+
+/* Botón principal */
+.form-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #b81c6d;
+}
+
+/* Botón de logout */
+.logout-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d63c3c;
+}
+
+/* Mensaje */
+.form-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
   .form-container {
-    width: 100%;
-    max-width: 500px;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1rem;
   }
-  
-  /* Título */
+
   .form-title {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 1.4rem;
   }
-  
-  /* Inputs */
-  .form-input {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  /* Botón */
-  .form-button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Mensaje de éxito/error */
-  .form-message {
-    margin-top: 1rem;
-    text-align: center;
-    font-weight: bold;
-    color: #28a745;
-  }
-  
-  /* Responsive pequeño */
-  @media (max-width: 480px) {
-    .form-container {
-      padding: 1.5rem 1rem;
-    }
-  
-    .form-title {
-      font-size: 1.25rem;
-    }
-  }
-  
+}

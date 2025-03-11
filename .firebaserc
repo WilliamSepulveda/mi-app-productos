@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "zenaida-db6ff",
+    "prod": "zenaida-db6ff"
+  },
+  "targets": {},
+  "etags": {}
+}
